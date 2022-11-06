@@ -30,7 +30,7 @@ def get_data_from_excel():
 df = get_data_from_excel()
 
 # ---- SIDEBAR ----
-st.sidebar.header("Please Filter Here:")
+st.sidebar.header("Please Make a Choice:")
 city = st.sidebar.multiselect(
     "Select the City:",
     options=df["City"].unique(),
