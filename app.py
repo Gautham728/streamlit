@@ -98,6 +98,8 @@ fig_hourly_sales = px.bar(
     y="Total",
     title="<b>Sales by hour</b>",
     color_discrete_sequence=["#1083B8"] * len(sales_by_hour),
+    color_continuous_scale=["orange", "red","green", "blue","purple"])
+ 
     template="plotly_white",
 )
 fig_hourly_sales.update_layout(
