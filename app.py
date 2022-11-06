@@ -113,7 +113,7 @@ right_column.plotly_chart(fig_product_sales, use_container_width=True)
 
 chart_data = pd.DataFrame(
     np.random.randn(20, 3),
-    columns=['a', 'b', 'c','d','e','f','g','h','i','j','k','l','m','n','o'])
+    columns=['a', 'b', 'c'])
 
 st.line_chart(chart_data)
 
