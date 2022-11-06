@@ -5,6 +5,8 @@ import pandas as pd  # pip install pandas openpyxl
 import plotly.express as px  # pip install plotly-express
 import streamlit as st  # pip install streamlit
 import numpy as np
+from PIL import Image
+
 
 st.set_page_config(page_title="Sales Dashboard", page_icon=":bar_chart:", layout="wide")
 
@@ -69,6 +71,11 @@ with middle_column:
 with right_column:
     st.subheader("Avg Sales Per Transaction:")
     st.subheader(f" $ {average_sale_by_transaction}")
+    
+
+image = Image.open('grocery-store.jpg')
+
+st.image(image, caption='Super Market')    
 
 st.markdown("""---""")
 
