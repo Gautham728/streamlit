@@ -68,7 +68,7 @@ with left_column:
     st.subheader("Total Sales:")
     st.subheader(f"US $ {total_sales:,}")
 with middle_column:
-    st.subheader("Average Rating:")
+    st.subheader(" Rating:")
     st.subheader(f"{average_rating} {star_rating}")
 with right_column:
     st.subheader("Average Sales Per Transaction:")
