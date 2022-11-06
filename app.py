@@ -65,14 +65,14 @@ average_sale_by_transaction = round(df_selection["Total"].mean(), 2)
 
 left_column, middle_column, right_column = st.columns(3)
 with left_column:
-    st.subheader("Total Sales:")
-    st.subheader(f"US $ {total_sales:,}")
+    st.subheader("SALES:")
+    st.subheader(f" $ {total_sales:,}")
 with middle_column:
     st.subheader(" Rating:")
     st.subheader(f"{average_rating} {star_rating}")
 with right_column:
     st.subheader("Average Sales Per Transaction:")
-    st.subheader(f"US $ {average_sale_by_transaction}")
+    st.subheader(f" $ {average_sale_by_transaction}")
 
 st.markdown("""---""")
 
