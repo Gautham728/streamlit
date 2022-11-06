@@ -117,6 +117,12 @@ chart_data = pd.DataFrame(
 
 st.line_chart(chart_data)
 
+chart_data = pd.DataFrame(
+    np.random.randn(20, 3),
+    columns=['a', 'b', 'c'])
+
+st.area_chart(chart_data)
+
 
 # ---- HIDE STREAMLIT STYLE ----
 hide_st_style = """
